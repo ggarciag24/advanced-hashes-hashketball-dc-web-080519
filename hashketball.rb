@@ -221,9 +221,11 @@ def big_shoe_rebounds
   largest_shoe = arr.max
   game_hash.each do |location, information|
     information.each do |team_property, property_value|
-      property_value.each do |player_info|
-        if player_info[:shoe] == largest_shoe
-          return player_info[:rebounds]
+     if property_value == :players
+        property_value.each do |player_info|
+          if player_info[:shoe] == largest_shoe
+            return player_info[:rebounds]
+          end
         end
       end
     end
