@@ -190,7 +190,8 @@ def player_stats(player_name)
     information.each do |team_property, property_value|
       if team_property == :players
         property_value.each do |player_info|
-          binding.pry
+          if player_info[:name] == player_name
+          binding.pry 
         end
       end
     end
