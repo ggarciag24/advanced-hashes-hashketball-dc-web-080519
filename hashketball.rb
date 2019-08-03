@@ -200,6 +200,7 @@ def player_stats(player_name)
              new[:blocks] = player_info[:blocks]
              new[:slam_dunks] = player_info[:slam_dunks]
              return new
+          end 
         end
       end
     end
