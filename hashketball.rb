@@ -208,11 +208,12 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds
+  arr = []
   game_hash.each do |location, information|
     information.each do |team_property, property_value|
       if team_property == :players
         property_value.each do |player_info|
-          player_info[:shoe]
+          arr.push(player_info[:shoe])
           binding.pry
         end
       end
