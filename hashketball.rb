@@ -185,13 +185,15 @@ def player_numbers(team_name)
 end
 
 def player_stats(player_name)
-  new = {}
   game_hash.each do |location, information|
     information.each do |team_property, property_value|
       if team_property == :players
         property_value.each do |player_info|
           if player_info[:name] == player_name
-          binding.pry 
+             new = {}
+             player_info.push(:number)
+             
+             return new
         end
       end
     end
