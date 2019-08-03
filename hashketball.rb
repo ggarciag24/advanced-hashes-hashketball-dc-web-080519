@@ -218,7 +218,8 @@ def big_shoe_rebounds
       end
     end
   end
-  arr.max
+  largest_shoe = arr.max
+  
   binding.pry
 end
 
