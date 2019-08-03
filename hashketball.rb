@@ -214,8 +214,8 @@ def big_shoe_rebounds
       if team_property == :players
         property_value.each do |player_info|
           arr.push(player_info[:shoe])
-          binding.pry
         end
+        binding.pry
       end
     end
   end
