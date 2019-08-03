@@ -191,8 +191,14 @@ def player_stats(player_name)
         property_value.each do |player_info|
           if player_info[:name] == player_name
              new = {}
-             player_info.push(:number)
-             
+             new[:number] = player_info[:number]
+             new[:shoe] = player_info[:shoe]
+             new[:points] = player_info[:points]
+             new[:rebounds] = player_info[:rebounds]
+             new[:assists] = player_info[:assists]
+             new[:steals] = player_info[:steals]
+             new[:blocks] = player_info[:blocks]
+             new[:slam_dunks] = player_info[:slam_dunks]
              return new
         end
       end
