@@ -219,8 +219,11 @@ def big_shoe_rebounds
     end
   end
   largest_shoe = arr.max
-  
-  binding.pry
+  game_hash.each do |location, information|
+    information.each do |team_property, property_value|
+      binding.pry
+    end
+  end  
 end
 
 
