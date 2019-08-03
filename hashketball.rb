@@ -216,9 +216,9 @@ def big_shoe_rebounds
           arr.push(player_info[:shoe])
         end
       end
-    binding.pry
     end
   end
+  binding.pry
 end
 
 
