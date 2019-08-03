@@ -213,6 +213,8 @@ def big_shoe_rebounds
       if team_property == :players
         property_value.each do |player_info|
           if player_info == :shoe
+            binding.pry
+          end
         end
       end
     end
