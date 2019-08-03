@@ -218,11 +218,11 @@ def big_shoe_rebounds
       end
     end
   end
+  big_rebounds = ""
   largest_shoe = arr.max
   game_hash.each do |location, information|
     information.each do |team_property, property_value|
      if team_property == :players
-        binding.pry
         property_value.each do |player_info|
           if player_info[:shoe] == largest_shoe
             big_rebounds =  player_info[:rebounds]
@@ -230,7 +230,8 @@ def big_shoe_rebounds
         end
       end
     end
-  end  
+  end
+  big_rebounds
 end
 
 
